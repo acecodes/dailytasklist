@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Daily Task List</title>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+
+  <body ng-app="Todo">
+    <div class="page-container" ng-controller="TodoCtrl">
+      
+  <h2>Daily Task List</h2>
+
+<!-- Todo list -->
+
+    <ul class="todo-list" ng-repeat="todo in todos track by $index">
+      <li>
+        <span>{{ todo }}</span>
+            <button class="bt bt-achieve" ng-click="done(todo)">Done</button>
+      </li>
+    </ul>
+
+
+<!-- Add a todo item -->
+
+    <ul class="add-todo">
+    <li>
+      <input type="text" class="txt" placeholder="New Todo"
+        ng-model="newTodo" ng-keyup="add($event)" />
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.8/angular.js"></script>
+    <script src="static/js/script.js"></script>
+  </div>
+
+
+  </body>
+
+</html>
