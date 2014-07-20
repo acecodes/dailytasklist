@@ -4,17 +4,41 @@
   <head>
   <title>Daily Task List</title>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/cover.css" />
+    <link rel="stylesheet" href="static/css/custom.css" />
   </head>
 
-  <h2>Daily Task List</h2>
-
-  <body ng-app="Todo">
-    <div class="page-container" ng-controller="TodoCtrl">
-      
+  
+           <body ng-app="Todo">     
 
 
-<!-- Todo list -->
+ <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+<!--           <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Cover</h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div> -->
+
+<h1>Daily Task List</h1>
+<h4>Brought to you by Ace Eddleman</h4>
+
+          <div class="inner cover">
+
+
+          <div class="page-container" ng-controller="TodoCtrl">
+
+            <!-- Todo list -->
 
     <ul class="todo-list" ng-repeat="todo in todos track by $index">
       <li>
@@ -30,14 +54,38 @@
     <li>
       <input type="text" class="txt" placeholder="New Todo"
         ng-model="newTodo" ng-keyup="add($event)" />
+    </li>
+    </ul>
+                          
+          </div>
 
+
+<!--           <div class="mastfoot">
+            <div class="inner">
+
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    </div>
 
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.8/angular.js"></script>
     <script src="static/js/script.js"></script>
-  </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
 
-<h4>Brought to you by Ace Eddleman</h4>
+
+
+</div>
 
   </body>
 
