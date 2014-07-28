@@ -10,6 +10,9 @@ html, body {
   width: 100%;
 }
 
+a { color: #000000;}
+a:hover { color: #000000; }
+
 body {
   background-attachment: scroll;
   background-clip: border-box;
@@ -112,3 +115,52 @@ h4 {
 .todo-list li .bt:hover {
   width: 80px;
 }
+
+/* Goodreads */
+
+  .gr_custom_container_1406514147 {
+    /* customize your Goodreads widget container here*/
+    border: 1px solid gray;
+    border-radius:10px;
+    padding: 10px 5px 10px 5px;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin:auto auto 50px auto;
+    text-align:center;
+  }
+
+
+  .gr_custom_header_1406514147 {
+    /* customize your Goodreads header here*/
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #000000;
+    font-size: 120%
+  }
+  .gr_custom_each_container_1406514147 {
+    /* customize each individual book container here */
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+    overflow: auto;
+    border-bottom: 1px solid #aaa;
+        color: #000000;
+    padding:10px;
+  }
+  .gr_custom_book_container_1406514147 {
+    /* customize your book covers here */
+    overflow: hidden;
+    height: 20%;
+      float: left;
+      margin-right: 0;
+      width: 20%;
+  }
+
+
+  .gr_custom_author_1406514147 {
+    /* customize your author names here */
+    font-size: 10px;
+    margin:auto;
+  }
