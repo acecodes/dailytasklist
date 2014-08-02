@@ -2,7 +2,12 @@ var app = angular.module('Todo', []);
 
 app.controller('TodoCtrl', function($scope) {
 	$scope.todos = [
-		'Add items to todo list',
+		'Review flash cards',
+		'Watch at least 1 MOOC video',
+		'Push at least 1 commit to Github',
+		'Write for at least 30 minutes',
+		'Read at least 50 pages',
+		'Exercise'
 	];
 
 	$scope.done = function(todo) {
