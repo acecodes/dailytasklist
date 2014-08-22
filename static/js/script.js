@@ -6,8 +6,9 @@ app.controller('TodoCtrl', function($scope) {
 		'Watch at least 1 MOOC video',
 		'Push at least 1 commit to Github',
 		'Write for at least 30 minutes',
-		'Read at least 50 pages',
-		'Exercise'
+		'Read for at least 30 minutes',
+		'Exercise for at least 10 minutes',
+		'Work on website for at least 30 minutes'
 	];
 
 	$scope.done = function(todo) {
